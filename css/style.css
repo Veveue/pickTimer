@@ -1,0 +1,158 @@
+/* reset */
+
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* common */
+
+.p0 {
+    padding: 0;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.mr-15 {
+    margin-right: -15px;
+}
+
+.bdl-4-ff5400 {
+    border-left: 4px solid #ff5400;
+}
+
+.bdr-1-ccc {
+    border-right: 1px solid #ccc;
+}
+
+html,
+body {
+    overflow: hidden;
+    max-width: 750px;
+    height: 100vh;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.0rem;
+    background-color: #f8f8f8;
+}
+
+
+/* header */
+
+header {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    line-height: 7vh;
+    color: #999;
+    background-color: #ececec;
+}
+
+header .btn.btn-small {
+    border: 1px solid #ccc;
+    padding: 0 .6rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: #666;
+    background: none;
+    box-shadow: none;
+}
+
+header .btn.btn-warning {
+    border-color: #e64e03;
+    color: #fff;
+    background-color: #ff5400;
+}
+
+
+/* settings */
+
+.settings ul {
+    background-color: #f8f8f8;
+}
+
+.settings ul li {
+    border-bottom: 1px solid #f0f0f0;
+    height: 8.5vh;
+    line-height: 8.5vh;
+}
+
+.settings ul li .arrow-right {
+    color: #ccc;
+    transform: scaleY(2);
+}
+
+
+/* result */
+
+.result {
+    padding: 12vh 0 5vh;
+    text-align: center;
+}
+
+
+/* touches */
+
+.touches {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+
+/* pick-timer */
+
+.pick-timer {
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #ccc;
+    height: 200px;
+}
+
+.pick-timer .list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    transition: top .4s ease-out;
+}
+
+.pick-timer .list li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all .1s ease-out;
+}
+
+.pick-timer .list li.active {
+    font-size: 2.4rem;
+    color: #ff5400;
+}
+
+.pick-timer .current {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+}

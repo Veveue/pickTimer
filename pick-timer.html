@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/materialize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+		<header>
+			<div class="row m0">
+				<div class="col s3">
+					<a href="#" class="btn btn-small">取消</a>
+				</div>
+				<div class="col s6 center-align">设置</div>
+				<div class="col s3 right-align">
+					<a href="#" class="btn btn-small btn-warning">确定</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="container touches">
+			<div class="row m0">
+				<div class="col s6  pick-timer bdr-1-ccc" data-length="24">
+					<ul class="list">
+
+					</ul>
+					<div class="current  bdl-4-ff5400"></div>
+				</div>
+				<div class="col s6 pick-timer" data-length="60">
+					<ul class="list">
+
+					</ul>
+					<div class="current"></div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.bootcss.com/zepto/1.1.6/zepto.min.js"></script>
+		<script src="js/zepto.pickTimer.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.pick-timer').pickTimer();
+			})
+		</script>
+	</body>
+
+</html>
